@@ -2,12 +2,12 @@
 
 one:
   title: MyString
-  available: false
   publishdate: 2022-02-10
   rating: 9.99
+  available: false
 
 two:
   title: MyString
-  available: false
   publishdate: 2022-02-10
   rating: 9.99
+  available: false
