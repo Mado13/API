@@ -7,6 +7,10 @@ gem 'bcrypt', '~> 3.1', '>= 3.1.16'
 
 gem 'jwt', '~> 2.3'
 
+gem 'jbuilder', '~> 2.11', '>= 2.11.5'
+
+gem 'pg_search', '~> 2.3', '>= 2.3.6'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.4'
 # Use postgresql as the database for Active Record
