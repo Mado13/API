@@ -2,7 +2,11 @@ class Api::V1::BooksController < ApplicationController
   before_action :set_book
 
   def index
-    @books = Book.all
+    if params[:query].present?
+      @books = Book.search_author(params[:query])
+    else
+      @books = Book.where(available: true)
+    end
   end
 
   def show
