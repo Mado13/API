@@ -1,21 +1,16 @@
 class Api::V1::BooksController < ApplicationController
+  before_action :set_book
+
   def index
     @books = Book.all
-    render json: @books.to_json(only: [:title, :publishdate, :available, :rating ],
-      :include => {
-        :author => {only: [:name, :deceased]}
-      })
   end
 
   def show
+  end
+
+  private
+
+  def set_book
     @book = Book.find_by(id: params[:id])
-    if @book
-      render json: @book.to_json(only: [:title, :publishdate, :available, :rating],
-        :include => {
-          :author => {only: [:name, :deceased]}
-        })
-    else
-      render json: "Book not found"
-    end
   end
 end
