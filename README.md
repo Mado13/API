@@ -4,7 +4,7 @@ An API service for book managment from a library.
 
 * Rails 5
 
-* Postgresql
+* Postgresql - you should run rails db:seed in order to seed the DB
 
 * in order to test the service you should run rails server.
 
