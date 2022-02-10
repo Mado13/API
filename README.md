@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An API service for book managment from a library.
 
-Things you may want to cover:
+* Rails 5
 
-* Ruby version
+* Postgresql
 
-* System dependencies
+* in order to test the service you should run rails server.
 
-* Configuration
+* http://localhost:3000/api/v1/books - will show all available books
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* adding ?query={author_name} - will return all the books that a certain author wrote
