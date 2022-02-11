@@ -9,6 +9,8 @@ gem 'bcrypt', '~> 3.1', '>= 3.1.16'
 
 gem 'jwt', '~> 2.3'
 
+gem 'simple_command'
+
 gem 'jbuilder', '~> 2.11', '>= 2.11.5'
 
 gem 'pg_search', '~> 2.3', '>= 2.3.6'
